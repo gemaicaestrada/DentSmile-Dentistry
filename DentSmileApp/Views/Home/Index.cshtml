@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<link rel="stylesheet" href="~/Content/dentappcustom.css">
+
+@* Slider *@
+<div class="row" style="min-width:unset; height: 430px;">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="object-fit:cover;">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+            <div class="item active">
+                <img src="~/Content/img/slider/dental_img1.jpg" style="width:100%; height: 600px;">
+                <div class="carousel-caption">
+                    <h3>Payment Plans Available</h3>
+                    <p>Flexible payment plans based on your treatment plans</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="~/Content/img/slider/dental_img2.jpg" style="width:100%; height: 600px;">
+                <div class="carousel-caption">
+                    <h3>Suitable Treatment Plans</h3>
+                    <p>Thorough evaluation for every treatment</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="~/Content/img/slider/dental_img3.jpg" style="width:100%; height: 600px;">
+                <div class="carousel-caption">
+                    <h3>Friendly with Kids</h3>
+                    <p>We also provide special treatment with kids</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+@* Thumbnails *@
+<div class="row jumbotron" style="margin-top:180px;">
+    <center class="lead"><u>Check out what's new</u></center>
+    
+    <div class="col-md-4 thumb1 " style="border-radius:30px">
+        <a href="@Url.Action("officeinformation", "Home", null)">
+            <img src="~/Content/img/Thumbnails/meetourteam.png" class="img-thumbnail" style="width:300px; height:300px; display:block; margin-left:auto; margin-right:auto; border-style:dotted; " />
+        </a>
+     </div>
+    
+    <div class="col-md-4 thumb2" style="border-radius:30px">
+        <a href="@Url.Action("TreatmentPlans", "Home", null)">
+            <img src="~/Content/img/Thumbnails/treatmentplans.png" class="img-thumbnail" style="width:300px; height:300px; display:block; margin-left:auto; margin-right:auto; border-style:dotted; " />
+        </a>
+         </div>
+    <div class="col-md-4 thumb3" style="border-radius:30px">
+        <a href="@Url.Action("DentalOnlineInquiry", "Home", null)">
+            <img src="~/Content/img/Thumbnails/freeconsultaion.png" class="img-thumbnail" style="width:300px; height:300px; display:block; margin-left:auto; margin-right:auto; border-style:dotted;" />
+        </a>   
+    </div>
+</div>
+
+
+@* Address information *@
+<div class="jumbotron row officeinfo">
+    <h2>Office Information</h2>
+    <address style="text-decoration: double;">
+        35 Howard Street<br />
+        Toronto, Ontario M1L 4W4<br />
+        <abbr title="Phone">Phone:</abbr>
+        425.555.0100
+    </address>
+    <p class="lead">We are located at the very heart of downtown of Toronto.</p>
+    <center style="border:groove;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.896790639735!2d-79.37689828450169!3d43.671116279120696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb515f8799df%3A0x9ca10dfb23c0e208!2s35%20Howard%20St%2C%20Toronto%2C%20ON%20M4X%201J6!5e0!3m2!1sen!2sca!4v1584952695969!5m2!1sen!2sca" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </center><br />
+    <p><a href="https://goo.gl/maps/FRndyyTpJs5DQitP6" class="btn btn-primary btn-lg">Check on Google Map &raquo;</a></p>
+</div>

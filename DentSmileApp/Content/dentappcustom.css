@@ -1,0 +1,29 @@
+﻿/*DentSmileApp*/
+
+
+/*Index.cshtml*/
+.thumb1:hover{
+    background-color:pink;
+}
+
+.thumb2:hover {
+    background-color:aquamarine;
+}
+
+.thumb3:hover {
+    background-color:chartreuse;
+}
+
+.officeinfo:hover {
+    background-color: #e2e2e2;
+}
+
+/*NewPatient.cshtml*/
+.imgNP:hover {
+    background-color: white;
+}
+
+/*_Layout.cshtml*/
+.liMenu {
+font-size:40px;
+}
